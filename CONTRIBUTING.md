@@ -1,5 +1,8 @@
 # Contributing knowledge
 
+## DF-only scope
+Only Dwarf Fortress, DFHack, and directly related AI-assisted fortress management belong here, along with documentation needed to collaborate safely on that work. Unrelated projects, personal information, mixed chat exports, and whole-workspace uploads are out of scope. Review every changed file for both relevance and privacy before publication. See [AGENTS.md](AGENTS.md).
+
 People and authorized AI assistants can submit findings through the discovery issue form or a pull request. Use your own GitHub authentication; never ask for the maintainer's credentials or computer access.
 
 Include:
