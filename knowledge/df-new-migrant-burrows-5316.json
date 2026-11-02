@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scope": "dwarf-fortress",
+  "id": "df-new-migrant-burrows-5316",
+  "title": "Existing shelter membership did not cover incoming migrants",
+  "topic": "labor",
+  "df_version": "53.16",
+  "dfhack_version": "53.16-r3",
+  "status": "unverified",
+  "claim": "Five new migrants appeared without membership in an existing shelter burrow during an active civilian alert. Existing residents being sheltered did not establish that new arrivals would enter shelter. Opening an entrance for the arrivals exposed civilians to flying undead; one resident later died after the fight.",
+  "reproduction": "In a disposable test fortress, compare each newly added citizen's burrow membership with the intended shelter and observe their actual destination. Plan arrival routing, ready defenders and a verified return/closure sequence before treating the fortress as sealed again.",
+  "evidence": [
+    "Firsthand AI-assisted Namemerchants observations on 2026-11-02; sanitized summaries of native state, not a published save or raw telemetry.",
+    "Native isAssignedUnit checks were false for all five arrivals and true for an established planter.",
+    "The five arrivals were explicitly assigned; the entrance remained contested during return. Four nearby undead were defeated, but the planter was subsequently found dead."
+  ],
+  "limitations": "One live fortress on Windows; relevant mods were not fully inventoried. Community reproduction is pending. This is not a universal claim about every civilian-alert configuration or migrant wave. Membership does not override all fleeing/combat behavior and is not proof that an entrance or route is safe."
+}

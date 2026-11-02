@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scope": "dwarf-fortress",
+  "id": "df-health-blood-not-clearance-5316",
+  "title": "Near-full blood did not prove a wounded dwarf would survive",
+  "topic": "other-df",
+  "df_version": "53.16",
+  "dfhack_version": "53.16-r3",
+  "status": "unverified",
+  "claim": "A planter accumulated physical injuries during an undead attack, returned indoors, and was later found dead while her recorded blood count was still 5904 of 5940. An earlier all-alive combat snapshot therefore did not establish survival after the encounter.",
+  "reproduction": "Track damaged body parts, critical organ and airway injuries, consciousness, mobility, diagnosis and treatment in addition to blood. Reassess patients after combat and during recovery. Preserve uncertainty when a native death-cause record has not been inspected.",
+  "evidence": [
+    "Firsthand AI-assisted Namemerchants observations on 2026-11-02; sanitized summaries of native state, not a published save or raw telemetry.",
+    "All 27 residents were alive after the four local attackers died.",
+    "At a later population stop, 26 remained alive and the native report identified the planter as found dead. Three injured arrivals had Rest jobs in the hospital."
+  ],
+  "limitations": "One live fortress on Windows; relevant mods were not fully inventoried. Community reproduction is pending. The exact cause of death was not determined. Do not infer suffocation, bleeding, infection or successful treatment from these observations. A Rest job is not proof that diagnosis or treatment completed."
+}

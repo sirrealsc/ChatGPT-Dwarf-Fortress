@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scope": "dwarf-fortress",
+  "id": "df-broker-request-job-5316",
+  "title": "A broker request flag was not proof of an actual depot job",
+  "topic": "jobs",
+  "df_version": "53.16",
+  "dfhack_version": "53.16-r3",
+  "status": "unverified",
+  "claim": "Setting the depot's trader_requested flag to true left the broker without a TradeAtDepot job in this session, even though the depot screen reported that the broker could reach it. Toggling the normal depot controls created the missing job.",
+  "reproduction": "Compare the request state, actual depot jobs, broker job and position, and the staffed trade screen. If a request has no job, inspect normal depot controls rather than assuming the flag alone completed the action.",
+  "evidence": [
+    "Firsthand AI-assisted Namemerchants observations on 2026-11-02; sanitized summaries of native state, not a published save or raw telemetry.",
+    "The observed depot showed Broker requested, No job and Broker can access depot.",
+    "Choosing No trader needed and then Broker requested through the normal controls created TradeAtDepot; the broker subsequently reached the depot."
+  ],
+  "limitations": "One live fortress on Windows; relevant mods were not fully inventoried. Community reproduction is pending. One observed state transition does not prove all direct flag writes fail. Exact pixel coordinates are layout-specific and are deliberately excluded."
+}

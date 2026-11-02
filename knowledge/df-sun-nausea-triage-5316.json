@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scope": "dwarf-fortress",
+  "id": "df-sun-nausea-triage-5316",
+  "title": "Timestamped sun-nausea evidence differed from physical combat damage",
+  "topic": "other-df",
+  "df_version": "53.16",
+  "dfhack_version": "53.16-r3",
+  "status": "unverified",
+  "claim": "Two outdoor exposures produced fresh conditions with no damaged body parts, full blood, mild symptoms and a SunNausea thought at the matching game tick. Later combat injuries had damaged parts and attack/conflict evidence. The same broad symptom label or blood count should not collapse those cases into one diagnosis.",
+  "reproduction": "In a disposable observation, compare the condition's age, affected parts, blood, syndrome ID, symptom values and same-year/tick thoughts with combat reports. Keep unknown or mismatched cases for review rather than treating every outdoor condition as benign.",
+  "evidence": [
+    "Firsthand AI-assisted Namemerchants observations on 2026-11-02; sanitized summaries of native state, not a published save or raw telemetry.",
+    "The two sun-associated samples had zero damaged parts and full blood; the matching native thought was SunNausea.",
+    "A local controller suite reached 46 passing offline checks, including rejection of missing evidence, physical damage, blood loss and wrong syndromes."
+  ],
+  "limitations": "One live fortress on Windows; relevant mods were not fully inventoried. Community reproduction is pending. Offline mocks test decision logic, not clinical correctness or survival. No controller code is included here. The planter's later death demonstrates why full blood cannot excuse real damaged parts."
+}
