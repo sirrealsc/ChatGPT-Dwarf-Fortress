@@ -1,1 +1,118 @@
-{"schema_version":1,"scope":"dwarf-fortress","records":[{"id":"df-stock-semantics","path":"knowledge/df-stock-semantics.json","topic":"stocks","summary":"Stock quantities and unknowns","status":"historical-observation"},{"id":"df-brewing-bottleneck","path":"knowledge/df-brewing-bottleneck.json","topic":"brewing","summary":"Brewing throughput diagnosis","status":"historical-observation"},{"id":"df-production-goals","path":"knowledge/df-production-goals.json","topic":"production","summary":"Finite versus maintenance production","status":"historical-observation"}]}
+{
+  "schema_version": 1,
+  "scope": "dwarf-fortress",
+  "records": [
+    {
+      "id": "df-stock-semantics",
+      "path": "knowledge/df-stock-semantics.json",
+      "topic": "stocks",
+      "summary": "Stock quantities and unknowns",
+      "status": "historical-observation"
+    },
+    {
+      "id": "df-brewing-bottleneck",
+      "path": "knowledge/df-brewing-bottleneck.json",
+      "topic": "brewing",
+      "summary": "Brewing throughput diagnosis",
+      "status": "historical-observation"
+    },
+    {
+      "id": "df-production-goals",
+      "path": "knowledge/df-production-goals.json",
+      "topic": "production",
+      "summary": "Finite versus maintenance production",
+      "status": "historical-observation"
+    },
+    {
+      "id": "df-visible-stock-availability-5316",
+      "path": "knowledge/df-visible-stock-availability-5316.json",
+      "topic": "stocks",
+      "summary": "Visible stock is not necessarily usable stock",
+      "status": "unverified"
+    },
+    {
+      "id": "df-coke-bootstrap-reserve-5316",
+      "path": "knowledge/df-coke-bootstrap-reserve-5316.json",
+      "topic": "production",
+      "summary": "A coke chain needs starter fuel and a consumer reserve",
+      "status": "unverified"
+    },
+    {
+      "id": "df-pot-material-gate-5316",
+      "path": "knowledge/df-pot-material-gate-5316.json",
+      "topic": "brewing",
+      "summary": "A material-specific pot condition can block empty-container recovery",
+      "status": "unverified"
+    },
+    {
+      "id": "df-new-migrant-burrows-5316",
+      "path": "knowledge/df-new-migrant-burrows-5316.json",
+      "topic": "labor",
+      "summary": "Existing shelter membership did not cover incoming migrants",
+      "status": "unverified"
+    },
+    {
+      "id": "df-health-blood-not-clearance-5316",
+      "path": "knowledge/df-health-blood-not-clearance-5316.json",
+      "topic": "other-df",
+      "summary": "Near-full blood did not prove a wounded dwarf would survive",
+      "status": "unverified"
+    },
+    {
+      "id": "df-broker-request-job-5316",
+      "path": "knowledge/df-broker-request-job-5316.json",
+      "topic": "jobs",
+      "summary": "A broker request flag was not proof of an actual depot job",
+      "status": "unverified"
+    },
+    {
+      "id": "df-elven-petrified-stone-trade-5316",
+      "path": "knowledge/df-elven-petrified-stone-trade-5316.json",
+      "topic": "other-df",
+      "summary": "Undecorated petrified-stone crafts were accepted by elves",
+      "status": "unverified"
+    },
+    {
+      "id": "df-info-menu-clock-5316",
+      "path": "knowledge/df-info-menu-clock-5316.json",
+      "topic": "dfhack",
+      "summary": "An unpaused flag did not establish a moving game clock",
+      "status": "unverified"
+    },
+    {
+      "id": "df-held-ammo-forbid-5316",
+      "path": "knowledge/df-held-ammo-forbid-5316.json",
+      "topic": "other-df",
+      "summary": "Forbidding a carried bolt stack did not immediately change ammunition choice",
+      "status": "unverified"
+    },
+    {
+      "id": "df-weapon-rule-claim-5316",
+      "path": "knowledge/df-weapon-rule-claim-5316.json",
+      "topic": "dfhack",
+      "summary": "A weapon material preference did not immediately replace an old assignment",
+      "status": "unverified"
+    },
+    {
+      "id": "df-autofarm-zero-target-5316",
+      "path": "knowledge/df-autofarm-zero-target-5316.json",
+      "topic": "production",
+      "summary": "A zero crop target left available seed variety unused",
+      "status": "unverified"
+    },
+    {
+      "id": "df-workshop-worker-contention-5316",
+      "path": "knowledge/df-workshop-worker-contention-5316.json",
+      "topic": "workshops",
+      "summary": "Multiple workshops restricted to one worker limited parallel work",
+      "status": "unverified"
+    },
+    {
+      "id": "df-sun-nausea-triage-5316",
+      "path": "knowledge/df-sun-nausea-triage-5316.json",
+      "topic": "other-df",
+      "summary": "Timestamped sun-nausea evidence differed from physical combat damage",
+      "status": "unverified"
+    }
+  ]
+}

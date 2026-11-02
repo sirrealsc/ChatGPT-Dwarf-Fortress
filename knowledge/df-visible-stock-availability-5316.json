@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scope": "dwarf-fortress",
+  "id": "df-visible-stock-availability-5316",
+  "title": "Visible stock is not necessarily usable stock",
+  "topic": "stocks",
+  "df_version": "53.16",
+  "dfhack_version": "53.16-r3",
+  "status": "unverified",
+  "claim": "Visible WOOD totals overstated usable fuel. Three apparent indoor logs were workshop construction materials; two nearby surface logs had the construction flag. Additional loose logs were outside the allowed work area or high in trees. An inventory flag also described a weapon inside a bin, rather than a weapon held by a soldier.",
+  "reproduction": "In a disposable backed-up fortress, compare visible stack amounts with construction/building references, ownership/reservations, container chains, actual positions, burrow membership and a few representative routes. Compare wood totals with installed autochop status before changing production.",
+  "evidence": [
+    "Firsthand AI-assisted Namemerchants observations on 2026-11-02; sanitized summaries of native state, not a published save or raw telemetry.",
+    "Native autochop status reported zero usable logs and 22 inaccessible logs while the custom visible-stock counter remained positive.",
+    "A pending tree job became reachable after a small burrow extension and produced ten new logs."
+  ],
+  "limitations": "One live fortress on Windows; relevant mods were not fully inventoried. Community reproduction is pending. Filtering construction materials improves a sensor but does not establish reachability or recipe eligibility. A positive route result alone does not establish burrow or material availability."
+}

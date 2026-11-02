@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scope": "dwarf-fortress",
+  "id": "df-info-menu-clock-5316",
+  "title": "An unpaused flag did not establish a moving game clock",
+  "topic": "dfhack",
+  "df_version": "53.16",
+  "dfhack_version": "53.16-r3",
+  "status": "unverified",
+  "claim": "The year tick remained unchanged while pause_state was false and Jobs or Labor work-details panels were open. A separate Hotkey panel was rejected by run preflight. A controller that trusted only the pause flag could wait without advancing simulation.",
+  "reproduction": "Observe both focus and calendar/frame progression across a bounded interval. Close only an identified, reviewed panel through normal input, verify the resulting focus, and confirm the clock actually advances before declaring play active.",
+  "evidence": [
+    "Firsthand AI-assisted Namemerchants observations on 2026-11-02; sanitized summaries of native state, not a published save or raw telemetry.",
+    "Native focus checks identified Jobs and Labor work-details panels during repeated unchanged calendar readings.",
+    "Closing the known panel and verifying the default view allowed the existing bounded interval to advance."
+  ],
+  "limitations": "One live fortress on Windows; relevant mods were not fully inventoried. Community reproduction is pending. Focus labels and menu behavior may vary by version, overlay and layout. Do not automatically close unfamiliar prompts, confirmations or settings dialogs."
+}

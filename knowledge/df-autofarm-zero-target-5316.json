@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scope": "dwarf-fortress",
+  "id": "df-autofarm-zero-target-5316",
+  "title": "A zero crop target left available seed variety unused",
+  "topic": "production",
+  "df_version": "53.16",
+  "dfhack_version": "53.16-r3",
+  "status": "unverified",
+  "claim": "The fortress had seed stocks for additional underground crops while autofarm's default target for those crops was zero. A quarry-bush target and a conditional process-to-bag order were added; a two-job processing order subsequently completed.",
+  "reproduction": "Inspect installed autofarm status, real seed access, available farm area and seasonal compatibility. Configure an appropriate crop target and its processing/storage chain, then verify harvest and processing independently. Keep brewing crops and seed reserves protected.",
+  "evidence": [
+    "Firsthand AI-assisted Namemerchants observations on 2026-11-02; sanitized summaries of native state, not a published save or raw telemetry.",
+    "Five quarry-bush seeds and five empty indoor bags were observed before configuring the chain.",
+    "The quarry-bush target became 40; the native report later recorded completion of Process plant to bag (2)."
+  ],
+  "limitations": "One live fortress on Windows; relevant mods were not fully inventoried. Community reproduction is pending. Leaf and seed yields were not quantified. The large prepared-meal recovery followed imported fruit and must not be attributed solely to quarry bushes. Crop targets and processing conditions require local resource review."
+}
