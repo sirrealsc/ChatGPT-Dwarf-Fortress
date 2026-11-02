@@ -6,6 +6,13 @@ body:
     attributes:
       value: "Public submission. No credentials, private data, raw chat exports, saves, or binaries. Submissions are unverified until reviewed."
   - type: textarea
+    id: record
+    attributes:
+      label: Structured DF finding
+      description: "Paste one JSON record matching schemas/finding.schema.json, at most 8 KiB. scope must be dwarf-fortress; status must be unverified. See docs/exchange-protocol.md."
+    validations:
+      required: true
+  - type: textarea
     id: claim
     attributes:
       label: Claim and evidence status

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DF finding v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "scope",
+    "id",
+    "title",
+    "topic",
+    "df_version",
+    "dfhack_version",
+    "status",
+    "claim",
+    "reproduction",
+    "evidence",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "scope": {
+      "const": "dwarf-fortress"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^df-[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "maxLength": 80
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "topic": {
+      "enum": [
+        "stocks",
+        "brewing",
+        "production",
+        "jobs",
+        "workshops",
+        "labor",
+        "housing",
+        "dfhack",
+        "other-df"
+      ]
+    },
+    "df_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40
+    },
+    "dfhack_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40
+    },
+    "status": {
+      "enum": [
+        "unverified",
+        "historical-observation",
+        "reproduced",
+        "disputed"
+      ]
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1500
+    },
+    "reproduction": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 300
+      }
+    },
+    "limitations": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    }
+  }
+}

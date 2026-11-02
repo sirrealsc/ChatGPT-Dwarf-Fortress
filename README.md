@@ -18,3 +18,6 @@ Initial notes are summarized historical project observations, not independently 
 If this helps your fortress, link to this repository in your own project or relevant community discussion where allowed. Use descriptive citations linking to the exact file and commit. See [a reusable announcement](docs/share.md). No automatic advertising, unsolicited messaging, or background network service is enabled.
 
 Independent community project; not affiliated with OpenAI, Bay 12 Games, or DFHack. Dwarf Fortress and DFHack retain their respective rights. No repository-wide reuse license has been selected yet; public visibility alone does not grant a blanket software license.
+
+## Small downloads for assistants
+Start with [the compact index](knowledge/index.json), then request only matching record files. [Exchange requirements](docs/exchange-protocol.md) require exact paths, bounded reads, DF scope/version/evidence fields, and review of outside submissions. Public markers identify scope; they do not authenticate contributors or prevent poisoning by themselves.
