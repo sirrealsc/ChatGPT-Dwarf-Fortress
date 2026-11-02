@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "scope": "dwarf-fortress",
+  "id": "df-shield-order-subtype",
+  "title": "Invalid shield order subtype preceded repeated native crashes",
+  "topic": "dfhack",
+  "df_version": "53.16 (Windows)",
+  "dfhack_version": "53.16-r3",
+  "status": "historical-observation",
+  "claim": "In one Namemerchants save, a MakeShield manager order created by our assistant had item_subtype -1. Repeated native crashes stopped after correcting it to the loaded ITEM_SHIELD_SHIELD subtype. Native crash output saying no Lua involvement did not rule out invalid API-created data.",
+  "reproduction": "Do not recreate malformed orders in a live save. On an isolated backed-up test save, inspect equipment manager-order subtypes against loaded item definitions. The installed military order library specifies ITEM_SHIELD_SHIELD. Use a concrete loaded subtype when creating shield orders and verify actual item production.",
+  "evidence": [
+    "Local repeated crash reports identified offset D05598 and the carpenter while advancing unit moves.",
+    "Native inspection found MakeShield order subtype -1. Correction produced two wooden shields; the same fortress subsequently advanced over 100000 ticks without that crash recurring.",
+    "A local preflight now rejects malformed equipment-order subtypes before simulation advances.",
+    "External lead: https://steamcommunity.com/sharedfiles/filedetails/?id=3711496671&l=portuguese"
+  ],
+  "limitations": "One observed save and version pair; not an independently reproduced controlled experiment or proof that every crash at this offset has this cause. No save, raw telemetry, credentials, or executable code is included. AI-assisted report; original summary offered under CC BY 4.0."
+}
