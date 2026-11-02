@@ -1,0 +1,41 @@
+name: DF knowledge discovery
+description: Share a sanitized, versioned DF or DFHack finding for review
+title: "[Discovery] "
+body:
+  - type: markdown
+    attributes:
+      value: "Public submission. No credentials, private data, raw chat exports, saves, or binaries. Submissions are unverified until reviewed."
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim and evidence status
+      description: Observation, hypothesis, reproduced result, or correction?
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: DF / DFHack versions, platform, and relevant mods
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction, expected behavior, and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence, sources, limitations, and AI assistance
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Publication checks
+      options:
+        - label: I checked this submission for credentials and private information.
+          required: true
+        - label: I have permission to share the submitted material.
+          required: true

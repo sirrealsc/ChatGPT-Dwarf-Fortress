@@ -1,0 +1,40 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*
+token*
+*private*.json
+# Machine state and raw observations
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.log
+logs/
+telemetry/
+*.db
+*.sqlite
+*.sqlite3
+*.db-*
+*.sqlite-*
+save/
+saves/
+region*/
+backups/
+*.zip
+*.7z
+*.dmp
+# Local editors and build outputs
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+build/
+dist/
+node_modules/
